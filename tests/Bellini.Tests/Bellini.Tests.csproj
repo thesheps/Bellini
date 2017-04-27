@@ -55,8 +55,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GivenBuildTypes.cs" />
     <Compile Include="GivenBuilds.cs" />
+    <Compile Include="GivenBuildTypes.cs" />
     <Compile Include="GivenProjects.cs" />
     <Compile Include="MockResponses.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -78,6 +78,7 @@
     <EmbeddedResource Include="MockResponses.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MockResponses.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

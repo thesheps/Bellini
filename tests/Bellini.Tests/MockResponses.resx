@@ -117,6 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Builds" xml:space="preserve">
+    <value>{
+  "count": 2,
+  "href": "/guestAuth/app/rest/builds?locator=buildType:MyTest_BuildType1",
+  "build": [
+    {
+      "id": 1,
+      "buildTypeId": "MyTest_BuildType1",
+      "number": "2",
+      "status": "SUCCESS",
+      "state": "finished",
+      "branchName": "master",
+      "defaultBranch": true,
+      "href": "/guestAuth/app/rest/builds/id:1",
+      "webUrl": "http://teamcity/viewLog.html?buildId=1&amp;buildTypeId=MyTest_BuildType1"
+    },
+    {
+      "id": 2,
+      "buildTypeId": "MyTest_BuildType1",
+      "number": "3",
+      "status": "SUCCESS",
+      "state": "finished",
+      "branchName": "master",
+      "defaultBranch": true,
+      "href": "/guestAuth/app/rest/builds/id:2",
+      "webUrl": "http://teamcity/viewLog.html?buildId=2&amp;buildTypeId=MyTest_BuildType1"
+    } 
+  ]
+}</value>
+  </data>
   <data name="BuildTypes" xml:space="preserve">
     <value>{
   "count": 2,

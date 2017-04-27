@@ -26,6 +26,15 @@ namespace Bellini
             return buildTypes.Data.BuildType;
         }
 
+        public IList<Build> GetBuilds(string buildTypeId)
+        {
+            var request = new RestRequest("guestAuth/app/rest/builds");
+            request.AddQueryParameter("locator", $"buildType:{buildTypeId}");
+
+            var builds = _restClient.ExecuteAsGet<BuildsResponse>(request, "GET");
+            return builds.Data.Build;
+        }
+
         private readonly RestClient _restClient;
     }
 }

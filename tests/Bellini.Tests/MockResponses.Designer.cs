@@ -63,6 +63,32 @@ namespace Bellini.Tests {
         /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;count&quot;: 2,
+        ///  &quot;href&quot;: &quot;/guestAuth/app/rest/builds?locator=buildType:MyTest_BuildType1&quot;,
+        ///  &quot;build&quot;: [
+        ///    {
+        ///      &quot;id&quot;: 1,
+        ///      &quot;buildTypeId&quot;: &quot;MyTest_BuildType1&quot;,
+        ///      &quot;number&quot;: &quot;2&quot;,
+        ///      &quot;status&quot;: &quot;SUCCESS&quot;,
+        ///      &quot;state&quot;: &quot;finished&quot;,
+        ///      &quot;branchName&quot;: &quot;master&quot;,
+        ///      &quot;defaultBranch&quot;: true,
+        ///      &quot;href&quot;: &quot;/guestAuth/app/rest/builds/id:1&quot;,
+        ///      &quot;webUrl&quot;: &quot;http://teamcity/viewLog.html?buildId=1&amp;buildTypeId=MyTest_BuildType1&quot;
+        ///    },
+        ///    {
+        ///      &quot;id&quot;: 2,
+        ///      &quot;buildTypeId&quot;: &quot;MyTest_ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Builds {
+            get {
+                return ResourceManager.GetString("Builds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;count&quot;: 2,
         ///  &quot;href&quot;: &quot;/guestAuth/app/rest/buildTypes/?locator=project:MyTest&quot;,
         ///  &quot;buildType&quot;: [
         ///    {

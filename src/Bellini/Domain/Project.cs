@@ -2,7 +2,7 @@
 
 namespace Bellini.Domain
 {
-    public class ProjectsResponse
+    internal class ProjectsResponse
     {
         public List<Project> Project { get; set; }
     }

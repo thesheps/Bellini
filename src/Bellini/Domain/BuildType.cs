@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Bellini.Domain
 {
-    public class BuildTypesResponse
+    internal class BuildTypesResponse
     {
         public List<BuildType> BuildType { get; set; }
     }
