@@ -55,7 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GivenBelliniClient.cs" />
+    <Compile Include="GivenBuildTypes.cs" />
+    <Compile Include="GivenBuilds.cs" />
+    <Compile Include="GivenProjects.cs" />
     <Compile Include="MockResponses.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
