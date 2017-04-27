@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{0085D4FC-27CF-4BCD-A08E-BE840B3DB19E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A9A76BD8-A606-4B6F-A32B-8AA777DE9BFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bellini", "src\Bellini\Bellini.csproj", "{A22CB031-5EBD-4413-8ADB-550A82748D88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bellini.Tests", "Tests\Bellini.Tests\Bellini.Tests.csproj", "{91173178-0278-4054-828C-8F038C6EEC8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A22CB031-5EBD-4413-8ADB-550A82748D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22CB031-5EBD-4413-8ADB-550A82748D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22CB031-5EBD-4413-8ADB-550A82748D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22CB031-5EBD-4413-8ADB-550A82748D88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91173178-0278-4054-828C-8F038C6EEC8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91173178-0278-4054-828C-8F038C6EEC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91173178-0278-4054-828C-8F038C6EEC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91173178-0278-4054-828C-8F038C6EEC8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A22CB031-5EBD-4413-8ADB-550A82748D88} = {0085D4FC-27CF-4BCD-A08E-BE840B3DB19E}
+		{91173178-0278-4054-828C-8F038C6EEC8D} = {A9A76BD8-A606-4B6F-A32B-8AA777DE9BFE}
+	EndGlobalSection
+EndGlobal
