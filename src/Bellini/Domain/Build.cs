@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Bellini.Domain
@@ -18,5 +19,8 @@ namespace Bellini.Domain
         public bool DefaultBranch { get; set; }
         public string Href { get; set; }
         public string WebUrl { get; set; }
+        public DateTime QueuedDate { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime FinishDate { get; set; }
     }
 }

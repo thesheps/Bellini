@@ -13,12 +13,28 @@ namespace Bellini.Tests
         {
             using (var server = new Server(Port))
             {
+                server.OnGet("/guestAuth/app/rest/builds/id:1").Respond((req, res) =>
+                {
+                    res.Headers["Content-Type"] = "application/json";
+                    res.Body = MockResponses.BuildDetails;
+                });
+
+                server.OnGet("/guestAuth/app/rest/builds/id:2").Respond((req, res) =>
+                {
+                    res.Headers["Content-Type"] = "application/json";
+                    res.Body = MockResponses.BuildDetails;
+                });
+
                 server.OnGet("/guestAuth/app/rest/builds").Respond((req, res) =>
                 {
-                    if (req.Params["locator"] != "buildType:MyTest_MyBuildType")
-                        return;
-
                     res.Headers["Content-Type"] = "application/json";
+
+                    if (req.Params["locator"] != "buildType:MyTest_MyBuildType")
+                    {
+                        res.Body = MockResponses.BuildDetails;
+                        return;
+                    }
+
                     res.Body = MockResponses.Builds;
                 });
 

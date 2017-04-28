@@ -62,6 +62,19 @@ namespace Bellini.Tests {
         
         /// <summary>
         ///   Looks up a localized string similar to {
+        ///  &quot;queuedDate&quot;: &quot;20170419T132032+0100&quot;,
+        ///  &quot;startDate&quot;: &quot;20170419T132040+0100&quot;,
+        ///  &quot;finishDate&quot;: &quot;20170419T132240+0100&quot;
+        ///}.
+        /// </summary>
+        internal static string BuildDetails {
+            get {
+                return ResourceManager.GetString("BuildDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
         ///  &quot;count&quot;: 2,
         ///  &quot;href&quot;: &quot;/guestAuth/app/rest/builds?locator=buildType:MyTest_BuildType1&quot;,
         ///  &quot;build&quot;: [

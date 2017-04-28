@@ -194,4 +194,11 @@
   ]
 }</value>
   </data>
+  <data name="BuildDetails" xml:space="preserve">
+    <value>{
+  "queuedDate": "20170419T132032+0100",
+  "startDate": "20170419T132040+0100",
+  "finishDate": "20170419T132240+0100"
+}</value>
+  </data>
 </root>
